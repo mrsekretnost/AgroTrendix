@@ -1,0 +1,24 @@
+@startuml
+title Диаграмма последовательностей SD-03 «Авторизация пользователей»
+autonumber
+
+actor "Пользователь" as User
+participant "Система АгроТрендикс" as System
+
+User -> System: Открыть страницу авторизации
+activate System
+System --> User: Форма ввода логина и пароля
+
+User -> System: Ввести учетные данные и нажать «Войти»
+System -> System: Проверить учетные данные в БД
+
+System --> User: Перенаправление в личный кабинет (по роли)
+
+alt неверный логин или пароль
+    System --> User: Ошибка аутентификации (A1)
+else обязательные поля пусты
+    System --> User: Ошибка: заполните все поля (A2)
+end
+
+deactivate System
+@enduml
