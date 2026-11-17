@@ -1,0 +1,25 @@
+@startuml
+title Диаграмма последовательностей SD-01 «Импорт данных о ценах»
+autonumber
+
+actor "Администратор" as Admin
+participant "Система АгроТрендикс" as System
+
+Admin -> System: Открыть раздел импорта данных
+activate System
+System --> Admin: Форма загрузки файла
+
+Admin -> System: Выбрать XLSX-файл и нажать «Загрузить»
+System -> System: Проверить формат и структуру данных
+
+System -> System: Импорт записей в БД и запись в лог
+System --> Admin: Сообщение об успешной загрузке
+
+alt формат файла не XLSX
+    System --> Admin: Ошибка: недопустимый формат файла (A1)
+else ошибка структуры или типов данных
+    System --> Admin: Ошибка структуры данных, отмена транзакции (A2)
+end
+
+deactivate System
+@enduml
