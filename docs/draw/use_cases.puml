@@ -1,0 +1,78 @@
+@startuml
+left to right direction
+
+title Диаграмма вариантов использования — веб-приложение «АгроТрендикс»
+
+actor "Фермер" as Farmer
+actor "Аналитик" as Analyst
+actor "Администратор" as Admin
+actor "Росстат / ЕМИСС\n(Внешняя система)" as Rosstat
+
+rectangle "Веб-приложение «АгроТрендикс»" {
+    usecase "Просмотр истории расчетов" as UC1
+    usecase "Расчет потенциальной выручки" as UC2
+    usecase "Управление информацией о хозяйстве" as UC3
+    usecase "Добавление продукции" as UC4
+    usecase "Просмотр и фильтрация цен" as UC5
+    usecase "Просмотр динамики цен" as UC6
+    usecase "Сравнение цен по регионам" as UC7
+    usecase "Просмотр аналитических показателей" as UC8
+    usecase "Добавление параметров переработки" as UC9
+    usecase "Сравнение сценариев реализации" as UC10
+    usecase "Сохранение сценариев" as UC11
+    usecase "Создание сценария реализации" as UC12
+    usecase "Расчет результата переработки" as UC13
+    
+    usecase "Формирование аналитических материалов" as UC14
+    usecase "Авторизация" as UC15
+    usecase "Работа с импортированными данными" as UC16
+    usecase "Проверка корректности данных" as UC17
+    
+    usecase "Управление системными настройками" as UC18
+    usecase "Управление пользователями" as UC19
+    usecase "Ведение справочников продукции и регионов" as UC20
+    usecase "Назначение ролей" as UC21
+    usecase "Управление источниками данных" as UC22
+    usecase "Просмотр истории импорта" as UC23
+    usecase "Импорт ценовых данных (XLSX)" as UC24
+}
+
+' Связи актера Фермер
+Farmer -- UC1
+Farmer -- UC2
+Farmer -- UC3
+Farmer -- UC4
+Farmer -- UC5
+Farmer -- UC6
+Farmer -- UC7
+Farmer -- UC8
+Farmer -- UC9
+Farmer -- UC10
+Farmer -- UC11
+Farmer -- UC12
+Farmer -- UC15
+
+' Связи актера Аналитик
+Analyst -- UC14
+Analyst -- UC15
+Analyst -- UC16
+Analyst -- UC17
+
+' Связи актера Администратор
+Admin -- UC15
+Admin -- UC18
+Admin -- UC19
+Admin -- UC20
+Admin -- UC21
+Admin -- UC22
+Admin -- UC23
+Admin -- UC24
+
+' Связь внешней системы
+Rosstat ..> UC24 : <<предоставляет данные>>
+
+' Специальные связи
+UC9 ..> UC12 : <<extend>>
+UC10 ..> UC13 : <<include>>
+
+@enduml
