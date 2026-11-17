@@ -156,17 +156,20 @@
 
 ---
 
-## 7. Ссылки на материалы предыдущих этапов проектирования
+## 7. Ссылки на материалы и индивидуальные отчёты
 
-Все материалы практических заданий и индивидуальные отчеты сохранены в репозитории:
-- **Методические материалы и задания (ПЗ № 1–5):** в каталоге [`source-material/`](../source-material/README.md).
-- **Индивидуальные отчеты по этапам проектирования (ПЗ № 4):**
-  - Шаронова А.И.: [`docs/md/sharonova-report_pz4.md`](md/sharonova-report_pz4.md) / [`docs/doc/sharonova-report_pz4.docx`](doc/sharonova-report_pz4.docx)
-  - Волкова А.П.: [`docs/md/volkova-report.md`](md/volkova-report.md) / [`docs/doc/volkova-report.docx`](doc/volkova-report.docx)
-  - Даудов Д.Г.: [`docs/md/daudov-report.md`](md/daudov-report.md) / [`docs/doc/daudov-report_pz4.docx`](doc/daudov-report_pz4.docx)
-  - Грунина И.А.: [`docs/md/grunina-report.md`](md/grunina-report.md) / [`docs/doc/grunina-report.docx`](doc/grunina-report.docx)
-  - Талибов А.Ю.: [`docs/md/talibov-report.md`](md/talibov-report.md) / [`docs/doc/talibov-report.docx`](doc/talibov-report.docx)
-- **Индивидуальные отчеты по организации репозитория (ПЗ № 5):**
-  - Шаронова А.И.: [`docs/md/sharonova-report_pz5.md`](md/sharonova-report_pz5.md) / [`docs/doc/sharonova-report_pz5.docx`](doc/sharonova-report_pz5.docx)
-  - Волкова А.П.: [`docs/md/volkova-report_pz5.md`](md/volkova-report_pz5.md) / [`docs/doc/volkova-report_pz5.docx`](doc/volkova-report_pz5.docx)
-  - Талибов А.Ю.: [`docs/md/talibov-report_pz5.md`](md/talibov-report_pz5.md) / [`docs/doc/talibov-report_pz5.docx`](doc/talibov-report_pz5.docx)
+- **Исходные методические материалы и задания (ПЗ № 1–5):** в каталоге [`source-material/`](../source-material/README.md).
+
+### Индивидуальные отчёты по практическому заданию № 5 (Организация репозитория):
+- **Шаронова А.И.** (Тимлид / Системный архитектор): [MD](md/sharonova-report_pz5.md) / [DOCX](doc/sharonova-report_pz5.docx)
+- **Волкова А.П.** (UX/UI-дизайнер): [MD](md/volkova-report_pz5.md) / [DOCX](doc/volkova-report_pz5.docx)
+- **Талибов А.Ю.** (Backend-разработчик): [MD](md/talibov-report_pz5.md) / [DOCX](doc/talibov-report_pz5.docx)
+- **Грунина И.А.** (Бизнес-аналитик): *в процессе загрузки участником*
+- **Даудов Д.Г.** (QA-инженер): *в процессе загрузки участником*
+
+### Индивидуальные отчёты по предыдущим этапам проектирования (ПЗ № 1–4):
+- **Шаронова А.И.**: [MD](md/sharonova-report_pz4.md) / [DOCX](doc/sharonova-report_pz4.docx)
+- **Волкова А.П.**: [MD](md/volkova-report.md) / [DOCX](doc/volkova-report.docx)
+- **Даудов Д.Г.**: [MD](md/daudov-report.md) / [DOCX](doc/daudov-report_pz4.docx)
+- **Грунина И.А.**: [MD](md/grunina-report.md) / [DOCX](doc/grunina-report.docx)
+- **Талибов А.Ю.**: [MD](md/talibov-report.md) / [DOCX](doc/talibov-report.docx)
